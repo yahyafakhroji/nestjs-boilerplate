@@ -27,6 +27,14 @@
     "@fastify/multipart": "^8.1.0",
     "@fastify/static": "^7.0.1",
     "@fastify/view": "^8.2.0",
+    "@mikro-orm/cli": "^6.1.3",
+    "@mikro-orm/core": "^6.1.3",
+    "@mikro-orm/knex": "^6.1.3",
+    "@mikro-orm/migrations": "^6.1.3",
+    "@mikro-orm/mysql": "^6.1.3",
+    "@mikro-orm/nestjs": "^5.2.3",
+    "@mikro-orm/reflection": "^6.1.3",
+    "@mikro-orm/sql-highlighter": "^1.0.1",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
@@ -92,5 +100,12 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
   }
 }
